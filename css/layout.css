@@ -1,0 +1,358 @@
+@charset "utf-8";
+
+
+body{
+    font-family:"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+	color: #333;
+	font-size:1rem;
+	line-height:1.85;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%; 
+	word-wrap: break-word;
+}
+
+@media screen and (max-width:768px) {
+body{
+	font-size:0.8rem;
+	}
+}
+
+*{box-sizing: border-box;}
+
+ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+
+a{
+	color: #333;
+	text-decoration: none;
+    outline: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* font-family */
+
+#splash-logo,
+.top-lead,
+h1,
+h2,
+h3 span,
+#g-nav,
+#pc-nav,
+.openbtn,
+#footer{
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+/* splash */
+
+#splash-logo{
+    font-size: 1.2rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #eb6100;
+}
+
+/* g-nav */
+
+#g-nav.panelactive li:last-child a{
+    margin: 30px 0 0 0;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    white-space: nowrap;
+}
+
+/*pc-nav*/
+
+#pc-nav span.bgLRextend::before{
+    background:#333;
+}
+
+
+@media screen and (max-width:990px) {
+    #pc-nav{
+        display: none;
+    }
+}
+
+/* heading */
+
+h1{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    line-height: 1;
+    letter-spacing: 0.2em;
+}
+
+@media screen and (max-width:550px) {
+    h1{
+        font-size:1.2rem;
+        top: 32%;
+    }
+}
+
+
+h1 a{
+    color:#eb6100;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+@media screen and (max-width:768px) {
+
+  h2{
+      font-size:2rem;
+    }
+}
+
+/* lead */
+
+.top-lead{
+    position: fixed;
+    bottom:10%;
+    left:5%;
+    font-size:3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+
+.top-lead span.bgLRextend::before{
+    background:#333;
+}
+
+@media screen and (max-width:550px) {
+.top-lead{
+    font-size:2.2rem;
+    }
+}
+@media screen and (max-width:380px) {
+.top-lead{
+    font-size:1.8rem;
+    }
+}
+
+/* main-area */
+
+#main-area{
+    width:90%;
+    margin:0 auto;
+    padding: 50px 0; 
+}
+
+/* topics */
+
+#topics{
+    border-left:3px solid #000;
+    padding: 0 0 0 20px;
+}
+
+@media screen and (max-width:768px) {
+    #topics{
+        margin:0 0 100px 0;
+}
+}
+
+#topics h2{
+    font-size: 1.5rem;
+}
+
+#topics h2 span.bgLRextend::before{
+    background:#333;
+}
+
+.bx-wrapper{
+    box-shadow:none;
+    border:none;
+}
+
+
+
+/* service */
+
+#service h2{
+    text-align: center;
+    margin:0 0 100px 0;
+}
+
+@media screen and (max-width:550px) {
+#service h2{
+    margin:0 0 50px 0;
+    }
+}
+
+#service h2 span.bgLRextend::before{
+    background:#333;
+}
+
+
+#service .service-area{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:0 0 300px 0;
+}
+
+@media screen and (max-width:768px) {
+#service .service-area{
+    margin:0 0 200px 0;   
+}
+}
+
+@media screen and (max-width:590px) {
+ #service .service-area{
+    margin:0 0 50px 0;   
+}
+   
+}
+
+#service .service-area::after{
+     content:'';
+    position: absolute;
+    width: 70%;
+    height: 23em;
+    background:#f3f3f3;
+    right:10%;
+    top:20%;
+    z-index: -1;
+}
+
+
+#service .service-area:nth-of-type(2n+1){
+     flex-direction: row-reverse;
+}
+
+
+#service .service-area .img{
+    width:50%;
+}
+
+#service .service-area .content{
+    width:40%;
+    background:#fff;
+    box-shadow: 0 0 20px #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:150px;
+}
+
+@media screen and (max-width:768px) {
+#service .service-area .content{
+    width:47%;
+    top:100px;
+    }  
+}
+
+@media screen and (max-width:590px) {
+#service .service-area .img{
+    width:100%;
+    z-index: 2;
+}
+#service .service-area .content{
+    width:100%;
+    top:-10px;
+    animation:none;
+    opacity: 1;
+    z-index: 1;
+}
+}
+
+#service .service-area .content-area{
+    padding:40px;   
+}
+
+#service .service-area .content-area h3{
+     text-align: center;
+    font-size: 1rem;
+    margin: 0 0 30px 0;
+}
+
+#service .service-area .content-area h3 span{
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.2rem;
+}
+
+#service .service-area .content-area p{
+     margin:0 0 30px 0;   
+}
+
+#service .btn{
+    text-align: right;
+}
+
+/* 関連記事表示 */
+
+.related-articles {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article {
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.article h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.article p {
+    margin: 10px 0;
+}
+
+
+/* footer */
+
+#footer{
+    padding: 100px 0;
+    border-top:1px solid #333;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    text-transform: uppercase;
+}
+
+#footer .footer-logo{
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    margin: 0 0 50px 0;
+    color: #666;
+}
+
+#footer small{
+     color:#888;
+}
+
+
+
