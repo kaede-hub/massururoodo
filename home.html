@@ -8,10 +8,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/css?family=Lato:900&display=swap" rel="stylesheet">
-
+<link rel="manifest" href="/manifest.json">
 
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
-<!--自作のCSS-->
+
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/parts.css">
 <link rel="stylesheet" type="text/css" href="css/layout.css">
@@ -137,6 +137,14 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollgress/2.0.0/scrollgress.min.js"></script>
 
-<script src="js/script.js"></script>
+<script src="js/script.js">
+</script>
+<script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/sw.js")
+        .then(registration => console.log("Service Worker registered"))
+        .catch(error => console.error("Error registering Service Worker"));
+    }
+  </script>
 </body>
 </html>
