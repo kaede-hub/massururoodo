@@ -1,6 +1,5 @@
 const CACHE_NAME = "muscle-load-cache-v1";
 const urlsToCache = [
-  "/",
   "/home.html",
   "/timer.html",
   "/css/reset.css",
