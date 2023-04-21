@@ -10,7 +10,6 @@ const urlsToCache = [
   "/css/timer.css",
   "/js/script.js",
   "/js/timer.js",
-  "/img/icons/icon-384x384.png",
   "/img/icons/icon-512x512.png"
 ];
 
