@@ -9,8 +9,8 @@ const urlsToCache = [
   "/css/timer.css",
   "/js/script.js",
   "/js/timer.js",
-  "/images/icons/icon-384x384.png",
-  "/images/icons/icon-512x512.png"
+  "/img/icons/icon-384x384.png",
+  "/img/icons/icon-512x512.png"
 ];
 
 self.addEventListener("install", event => {
